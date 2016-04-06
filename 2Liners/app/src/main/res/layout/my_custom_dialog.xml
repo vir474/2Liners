@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RatingBar
+        android:id="@+id/dialogratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/dialogok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dialogratingBar"
+        android:layout_below="@+id/dialogratingBar"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="16dp"
+        android:text="Ok" />
+
+    <Button
+        android:id="@+id/dialogcancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dialogok"
+        android:layout_alignBottom="@+id/dialogok"
+        android:layout_alignRight="@+id/dialogratingBar"
+        android:layout_marginRight="52dp"
+        android:text="Cancel" />
+
+</RelativeLayout>

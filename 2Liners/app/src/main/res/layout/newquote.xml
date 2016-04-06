@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:layout_marginTop="0dp" >
+
+    <ProgressBar
+        android:id="@+id/newquote_pb"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/postbtn"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <EditText
+        android:id="@+id/newquote"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/postbtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/postbtn"
+        android:layout_marginTop="102dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:ems="10"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:maxLength="200" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/postbtn"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/newquote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/postbtn" />
+
+</RelativeLayout>

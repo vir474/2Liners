@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    
+     >
+
+    <ImageView
+        android:id="@+id/quoteimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"  
+        android:scaleType="center"
+        android:layout_marginRight="10dp"
+        android:padding="4dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/quoteuname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/quoteimg"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@+id/quoteimg"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/tertiary_text_dark" />
+
+    <TextView
+        android:id="@+id/quotetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/quoteuname"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/quoteimg"
+        android:text="TextView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/quotetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/quotetext"
+        android:layout_alignRight="@+id/quotetext"
+        android:layout_margin="3dp"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/tertiary_text_dark" />
+
+    <Button
+        android:id="@+id/likebtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/likes"
+        android:layout_alignBottom="@+id/likes"
+        android:layout_toRightOf="@+id/likes"
+        android:background="@drawable/like" />
+
+    <TextView
+        android:id="@+id/dislikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/likebtn"
+        android:layout_alignBottom="@+id/likebtn"
+        android:layout_toRightOf="@+id/likebtn"
+        android:text="0 Dislikes"
+        android:textColor="@android:color/tertiary_text_dark" />
+
+    <TextView
+        android:id="@+id/likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quotetext"
+        android:layout_toRightOf="@+id/quoteimg"
+        android:text="0 likes"
+        android:textColor="@android:color/tertiary_text_dark" />
+
+    <Button
+        android:id="@+id/dislikebtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/dislikes"
+        android:layout_alignBottom="@+id/dislikes"
+        android:layout_toRightOf="@+id/dislikes"
+        android:background="@drawable/dislike" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/dislikes" />
+
+    <TextView
+        android:id="@+id/ratingcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="2dp"
+ 		android:layout_alignBottom="@+id/dislikes"
+        android:layout_toLeftOf="@+id/ratingBar"
+        android:text="0" />
+
+    <ToggleButton
+        android:id="@+id/favbtn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/dislikebtn"
+        android:layout_toRightOf="@+id/dislikebtn"
+        android:background="@drawable/favtogglebtn"
+        android:textOn=""
+        android:textOff="" />
+
+    <Button
+        android:id="@+id/fbshare"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/dislikebtn"
+        android:layout_toRightOf="@+id/favbtn"
+        android:background="@drawable/fb_share"
+        android:layout_marginLeft="3dp" />
+
+    <Button
+        android:id="@+id/deletebtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@+id/ratingcount"
+        android:layout_toRightOf="@+id/fbshare"
+        android:background="@drawable/delete_on"
+        android:visibility="invisible" />
+    
+</RelativeLayout>

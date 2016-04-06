@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Settingsactivity"
+    android:background="@drawable/background" >
+
+    <EditText
+        android:id="@+id/newpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newusername"
+        android:layout_centerVertical="true"
+        android:background="@drawable/textback"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="New Password" />
+
+    <EditText
+        android:id="@+id/newusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/textback"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="New Username" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/uploadpic"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/uploadpic"
+        android:layout_marginBottom="83dp"
+        android:background="@drawable/savebtn" />
+
+    <TextView
+        android:id="@+id/emailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/newusername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/emailback"
+        android:gravity="center"
+        android:text="Fetching Email..."
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="#800000" />
+
+    <Button
+        android:id="@+id/uploadpic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/newpassword"
+        android:layout_alignRight="@+id/newpassword"
+        android:layout_below="@+id/newpassword"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/uploadpicbtn" />
+
+    <ProgressBar
+        android:id="@+id/settingspb"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	
+    <item 
+        android:title="Exit"
+        android:id="@+id/exit"
+        />
+    
+     <item 
+        android:title="Admin Msgs"
+        android:id="@+id/adminmsg"
+        />
+    
+    <item 
+        android:title="Settings"
+        android:id="@+id/settings"
+        />
+
+</menu>
